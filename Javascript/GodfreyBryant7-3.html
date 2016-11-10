@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Sales</title>
+<script type="text/JavaScript">
+function getTotal()
+{
+	var dayOfWeek = new Date().getDay();
+
+	var subtotal = parseFloat(document.getElementById('subtotal').value);
+	var total;
+	
+	if ((dayOfWeek == 2 || dayOfWeek == 3) && subtotal > 50){
+		total = (subtotal * 0.9) * 1.06; }
+	
+	else{
+		total = subtotal * 1.06; }
+	
+		
+	document.getElementById('display').innerHTML = "Your total is: $" + Math.round(total * 100) / 100;
+}	
+</script>
+</head>
+<body>
+Subtotal: <input type="text" id="subtotal" size="10"><br>
+<button type="button" onclick="getTotal()">
+Compute</button>
+<div id="display"></div>
+</body>
+</html>

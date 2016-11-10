@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/JavaScript">
+function practiceMath() {
+
+	var firstnumber = parseFloat(document.getElementById('firstnumber').value);
+	var operator = document.getElementById('operator').value;
+	var secondnumber = parseFloat(document.getElementById('secondnumber').value);
+	var answer = parseFloat(document.getElementById('answer').value);
+	var output;
+	
+	if (operator == '+') {
+		if ((firstnumber + secondnumber) == answer)
+			output = "Correct!";
+		else
+			output = "Try again";
+	}
+	else if (operator == '-') {
+		if ((firstnumber - secondnumber) == answer)
+			output = "Correct!";
+		else
+			output = "Try again";
+			}
+	else if (operator == '*') {
+		if ((firstnumber * secondnumber) == answer)
+			output = "Correct!";
+		else
+			output = "Try again";
+			}
+	else if (operator == '/') {
+		if ((firstnumber / secondnumber) == answer)
+			output = "Correct!";
+		else
+			output = "Try again";
+			}
+	document.getElementById('display').innerHTML = output;
+	}
+</script>
+</head>
+<body>
+<h1> Math Practice! </h1>
+ <input type="text" id="firstnumber" size="12">
+ <input type="text" id="operator" size="12">
+ <input type="text" id="secondnumber" size="12">
+= <input type="text" id="answer" size="12"><br>
+<button type="button" onclick="practiceMath()">
+Check</button><br>
+    <div id="display"></div>
+</body>
+</html>

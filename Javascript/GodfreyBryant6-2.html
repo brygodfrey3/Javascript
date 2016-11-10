@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/JavaScript">
+function findShoes() {
+
+	var weather =(document.getElementById('weather').value);
+	var footwear;
+	
+	switch (weather){
+	case 'hot':
+		footwear = "sandals";
+		break;
+	case 'rain':
+		footwear = "galoshes";
+		break;
+	case 'snow':
+		footwear = "boots";
+		break;
+	default:
+		footwear = "shoes";
+		break;
+	}
+	document.getElementById('display').innerHTML = footwear
+	}
+</script>
+</head>
+<body>
+Outside Weather <input type="text" id="weather" size="12"><br>
+<button type="button" onclick="findShoes()" size="12">
+You need to wear</button><br>
+    <div id="display"></div>
+</body>
+</html>

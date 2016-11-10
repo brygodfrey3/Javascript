@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Mileage</title>
+<script type="text/JavaScript">
+function getMileage()
+{ 
+	
+	var beginning = parseFloat(document.getElementById('beginning').value);
+	var ending = parseFloat(document.getElementById('ending').value);
+	var gas = parseFloat(document.getElementById('gas').value);
+	var answer = (ending - beginning) / gas + " miles per gallon";
+	
+	document.getElementById('display').innerHTML = answer;
+}
+</script>
+</head>
+<body>
+
+Starting Odometer <input type="text" id="beginning"><br>
+Ending Odometer <input type="text" id="ending"><br>
+Gallons Of Gas Used <input type="text" id="gas"><br>
+<button type="button" onclick="getMileage()">
+Calculate </button>
+<div id="display"></div>
+
+</body>
+</html>

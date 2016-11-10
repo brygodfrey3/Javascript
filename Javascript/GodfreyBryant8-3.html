@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Times Table</title>
+<script type="text/JavaScript">
+function doMath()
+{
+	var output = '';
+	var i = 1;
+	while (i <= 12){
+		output += '5 x ' + i + ' = ' + (i * 5) + '<br>';
+		i++;
+		}
+	document.getElementById('display').innerHTML = output;
+}	
+</script>
+</head>
+<body>
+<button type="button" onclick="doMath()">
+Press to Display</button>
+<div id="display"></div>
+</body>
+</html>

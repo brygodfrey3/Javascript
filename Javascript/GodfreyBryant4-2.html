@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Another Program to Say Hello</title>
+<script type="text/JavaScript">
+function sayHello() {
+	// This JavaScript stuff can be complicated
+	// but it is rewarding when it works
+	var alias = document.getElementById('name').value;
+	
+	// This line should display my greeting
+	// if all goes well
+	var greeting = 'Top of the mornin to ya, ' + alias + '!';
+	
+	//This should display my div.
+	document.getElementById('display').innerHTML = greeting;
+}
+</script>
+</head>
+
+<body>
+Please enter your name: <input type="text" id="name">
+	<button type="button" onclick="sayHello()">
+	Press Here</button>
+	<div id="display"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>School Year</title>
+<script type="text/JavaScript">
+
+function findTen()
+{
+
+var firstNumber = document.getElementById('firstNumber').value;
+var secondNumber = document.getElementById('secondNumber').value;
+var Math
+
+if (firstNumber >= 10) {
+	Math = true;
+else if (secondNumber >= 10) {
+	Math = true;
+else if (firstNumber + secondNumber = 10) {
+	Math = true;
+else {
+	Math = false;
+	}
+	
+if (Math = true) { 
+document.getElementById('display').innerHTML = "True"
+}
+else if (Math = false) {
+document.getElementById('display').innerHTML = "False"
+
+}
+	
+</script>
+</head>
+<body>
+First Number: <input type="text" id="firstNumber" size="10"><br>
+Second Number: <input type="text" id="secondNumber" size="10"><br>
+<button type="button" onclick="findTen()">
+Submit</button>
+<div id="True"></div>
+<div id="False"></div>
+</body>
+</html>

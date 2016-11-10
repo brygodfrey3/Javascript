@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume Conversion</title>
+<script type="text/JavaScript">
+function convertQuarts()
+{
+	var quarts = parseFloat(document.getElementById('quarts').value);
+	var liters = "You have " + quarts * 0.946353 + " liters";
+	
+	document.getElementById('display').innerHTML = liters;
+}
+</script>
+</head>
+<body>
+
+Quarts<input type="text" id="quarts"><br>
+<button type="button" onclick="convertQuarts()">
+
+Convert </button>
+<div id="display"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Addition</title>
+<script type="text/JavaScript">
+function doMath()
+{
+	var number = parseInt(document.getElementById('number').value);
+	var sum = 0;
+	for (var i = 0; i <= number; i++)
+		if ( i % 2 != 0)
+			sum += i;
+		
+	document.getElementById('display').innerHTML = sum;
+}	
+</script>
+</head>
+<body>
+Number: <input type="text" id="number" size="10"><br>
+<button type="button" onclick="doMath()">
+Submit</button>
+<div id="display"></div>
+</body>
+</html>
